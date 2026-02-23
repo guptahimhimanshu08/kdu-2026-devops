@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Himanshu Serverless Message Board</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <h1>Serverless Message Board</h1>
+
+  <!-- Submit Form -->
+  <div class="card">
+    <h2>Submit a Message</h2>
+    <input type="text" id="messageInput" placeholder="Enter your message" />
+    <button onclick="submitMessage()">Submit</button>
+  </div>
+
+  <!-- Actions -->
+  <div class="actions">
+    <button onclick="loadMessages()">Refresh Messages</button>
+  </div>
+
+  <!-- Messages Section -->
+  <div class="card">
+    <h2>Messages</h2>
+    <ul id="messagesList"></ul>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
