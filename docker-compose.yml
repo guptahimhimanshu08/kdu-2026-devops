@@ -1,0 +1,27 @@
+
+services: 
+  frontend:
+    build: ./frontend
+    ports:
+      - "80:80"
+    environment:
+      - BACKEND_HOST= backend-1
+    depends_on:
+      - backend-1
+  
+  backend-1:
+    build: ./backend-1
+    ports:
+      - "8080:8080"
+    env_file:
+      - ./backend-1/.env
+    depends_on:
+      - backend-2
+  
+  backend-2:
+    build: ./backend-2
+    ports:
+      - "8081:8081"
+    env_file:
+      - ./backend-2/.env
+    

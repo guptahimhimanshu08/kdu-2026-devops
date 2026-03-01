@@ -1,0 +1,55 @@
+# ---------------------------
+# Node / JS
+# ---------------------------
+node_modules
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+pnpm-debug.log
+
+# ---------------------------
+# Build outputs
+# ---------------------------
+dist
+build
+.out
+.next
+coverage
+
+# ---------------------------
+# Environment & secrets
+# ---------------------------
+.env
+.env.*
+*.pem
+*.key
+
+# ---------------------------
+# Git & VCS
+# ---------------------------
+.git
+.gitignore
+.gitattributes
+
+# ---------------------------
+# OS / Editor files
+# ---------------------------
+.DS_Store
+Thumbs.db
+.vscode
+.idea
+*.swp
+
+# ---------------------------
+# Docker files themselves
+# ---------------------------
+Dockerfile*
+docker-compose*.yml
+
+# ---------------------------
+# Logs & temp
+# ---------------------------
+logs
+*.log
+tmp
+.cache
